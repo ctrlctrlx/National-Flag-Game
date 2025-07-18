@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>国旗识别游戏 | Flag Quiz Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="game-title">国旗识别游戏</h1>
+      <div class="lang-switch">
+        <button id="lang-zh" class="lang-btn active">中文</button>
+        <button id="lang-en" class="lang-btn">English</button>
+      </div>
+      <button id="learn-btn" class="learn-btn">学习板块</button>
+    </header>
+    <main>
+      <div id="quiz-section">
+        <div class="flag-area">
+          <img id="flag-img" src="" alt="flag" />
+        </div>
+        <div id="options" class="options"></div>
+        <div class="score-area">
+          <span id="score-label">分数：</span><span id="score">0</span>
+        </div>
+        <button id="next-btn" class="next-btn" disabled>下一题</button>
+        <button id="restart-btn" class="restart-btn">重新开始</button>
+      </div>
+      <div id="learn-section" class="learn-container" style="display:none;">
+        <header style="text-align:center;">
+          <h1 id="learn-title">国旗学习板块</h1>
+          <div class="lang-switch">
+            <button id="learn-lang-zh" class="lang-btn active">中文</button>
+            <button id="learn-lang-en" class="lang-btn">English</button>
+            <button id="back-btn" class="learn-btn" style="margin-left:16px;">返回游戏</button>
+          </div>
+          <input id="flag-search" class="flag-search" type="text" placeholder="搜索国家名称..." autocomplete="off" style="margin-top:12px;width:80%;max-width:320px;padding:8px 12px;font-size:1rem;border-radius:6px;border:1px solid #ccc;" />
+        </header>
+        <div class="flags-grid" id="flags-grid"></div>
+      </div>
+    </main>
+    <footer>
+      <p>数据来源：<a href="https://flagcdn.com/" target="_blank">flagcdn.com</a></p>
+    </footer>
+  </div>
+  <script src="countries.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> 
