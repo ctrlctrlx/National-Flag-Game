@@ -17,6 +17,10 @@ const backBtn = document.getElementById('back-btn');
 const learnLangZhBtn = document.getElementById('learn-lang-zh');
 const learnLangEnBtn = document.getElementById('learn-lang-en');
 const flagSearch = document.getElementById('flag-search');
+let learnSearchValue = '';
+let learnLang = 'zh'; // 或根据需要初始化为 'en'
+
+
 
 // 游戏状态
 let currentLang = 'zh'; // 'zh' or 'en'
